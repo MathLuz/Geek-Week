@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .tags {
+    margin-bottom: 10px;
+}
+.tag-btn {
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.item-list {
+    list-style: none;
+    padding: 0;
+}
+.item {
+    display: none;
+    margin-bottom: 5px;
+}
+.show {
+    display: block;
+}
+    </style>
+</head>
+<body>
+    <!-- <object data="header.html" width="100%" height="100%"></object> -->
+    <header>
+        <img class="logo" src="img/GeekWeekLogo.png"/>
+        <h1>Geek Week</h1>
+        <img class="iconDevMobile" src="img/devcred.png"/>
+    </header>
+    <main>
+        <div class="tags">
+            <button class="tag-btn" data-tag="all">All</button>
+            <button class="tag-btn" data-tag="food">Food</button>
+            <button class="tag-btn" data-tag="travel">Travel</button>
+            <button class="tag-btn" data-tag="nature">Nature</button>
+        </div>
+        <ul class="item-list">
+            <li class="item" data-tags="food">Delicious Food</li>
+            <li class="item" data-tags="travel">Adventure Trip</li>
+            <li class="item" data-tags="food nature">Picnic in the Park</li>
+            <!-- ... more items ... -->
+        </ul>
+    </main>
+    <script>
+// Filtro
+document.addEventListener("DOMContentLoaded", function () {
+    const tagButtons = document.querySelectorAll(".tag-btn");
+    const items = document.querySelectorAll(".item");
+
+    tagButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            const selectedTag = button.getAttribute("data-tag");
+
+            items.forEach(item => {
+                if (selectedTag === "all" || item.getAttribute("data-tags").includes(selectedTag)) {
+                    item.classList.add("show");
+                } else {
+                    item.classList.remove("show");
+                }
+            });
+        });
+    });
+});
+
+    </script>
+</body>
+</html>
