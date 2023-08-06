@@ -1,0 +1,189 @@
+@use 'variables'
+// @use 'mixins'
+// Estilos globais
+html
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: center
+  height: 100%
+  width: 100%
+  background-color: variables.$corE
+  color: variables.$corC
+  font-family: 'Ysabeau SC', sans-serif
+
+  // HEADER
+  header
+    position: fixed
+    width: 100%
+    height: variables.$alturaHeader
+    display: flex
+    flex-direction: row
+    justify-content: space-evenly
+    align-items: center
+    background-color: variables.$corL
+    color: variables.$corP
+
+    .logo
+      height: 55px
+
+    .icon-dev-mobile
+      height: 30px
+
+  body
+    height: 100%
+    width: 100%
+
+  // MAIN INDEX
+  .main-index
+    height: 100%
+    width: 100%
+    margin-bottom: 50px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-around
+
+    img
+      z-index: 2
+
+    .backgroundImg
+      transform: scaleX(-1)
+      opacity: 0.4
+      position: absolute
+      z-index: 0
+      width: 420px
+      height: 490px
+      top: 0
+
+    .imgmed
+      height: 110px
+
+    .imgmax
+      width: 170px
+
+    .icons-index
+      text-align: center
+      width: 130px
+      border: solid 2px variables.$corT
+      border-radius: 10px
+      margin-top: 30px
+      z-index: 9
+
+      img
+        height: 50px
+
+  // MAIN CRONOGRAMA
+  .body-cronograma
+    height: 100%
+    width: 100%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+
+    .main-cronograma
+      margin-top: variables.$alturaHeader
+      height: 100%
+      width: 100%
+      display: flex
+      flex-direction: column
+      align-items: center
+
+      .tags
+        background-color: variables.$corE
+        height: 50px
+        position: fixed
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 100%
+        text-align: center
+
+        .tag-btn
+            font-size: variables.$fSize2
+            font-weight: 600
+            height: 20px
+            width: 16%
+            background-color: variables.$corE
+            color: variables.$corC
+            border-right: 1px solid #ffffff44
+            font-family: 'Ysabeau SC', sans-serif
+        .tag-btn:last-child
+            border: none
+
+      .infos
+        background-color: variables.$corE
+        position: fixed
+        margin-top: 50px
+        width: 100%
+        height: 50px
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-around
+
+        li
+            padding: 3px 10px
+            border-radius: 7px
+
+        .inf-palestras
+            background-color: variables.$corAum
+        .inf-games
+            background-color: variables.$corAdo
+        .inf-apres
+            background-color: variables.$corAtr
+        .inf-oficinas
+            background-color: variables.$corAqu
+      .box-eventos
+        margin-top: 110px
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+        width: 100%
+        max-width: 1100px
+
+        .itens
+            width: 100%
+            max-width: 500px 
+            margin: 2px
+            background-color: #444
+            .horario
+                background-color: variables.$corC
+                color: variables.$corP
+                padding: 0 10px
+            .box-child-events
+                display: flex
+                flex-direction: row
+                justify-content: space-between
+                padding: 15px
+                div
+                    img
+                        border-radius: 8px 
+                    p
+                        padding: 5px
+                .titulo-evento
+                    text-align: center
+                    font-size: variables.$fSize1
+// FOOTER
+footer
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  position: fixed
+  bottom: 0
+  background-color: variables.$corL
+  height: 50px
+  width: 100%
+
+  img
+    width: 40px
+    height: 40px
+    filter: brightness(0)
+
+  .back
+    transform: scaleX(-1)
+    position: absolute
+    right: 0
+    margin-right: 20px
