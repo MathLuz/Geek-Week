@@ -148,25 +148,29 @@ html .body-cronograma .main-cronograma .box-eventos .itens {
   max-width: 500px;
   margin: 2px;
   background-color: #444;
+  display: none;
 }
-html .body-cronograma .main-cronograma .box-eventos .itens .horario {
+html .body-cronograma .main-cronograma .box-eventos .show {
+  display: flex;
+}
+html .body-cronograma .main-cronograma .box-eventos .show .horario {
   background-color: #fff;
   color: #000;
   padding: 0 10px;
 }
-html .body-cronograma .main-cronograma .box-eventos .itens .box-child-events {
+html .body-cronograma .main-cronograma .box-eventos .show .box-child-events {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 15px;
 }
-html .body-cronograma .main-cronograma .box-eventos .itens .box-child-events div img {
+html .body-cronograma .main-cronograma .box-eventos .show .box-child-events div img {
   border-radius: 8px;
 }
-html .body-cronograma .main-cronograma .box-eventos .itens .box-child-events div p {
+html .body-cronograma .main-cronograma .box-eventos .show .box-child-events div p {
   padding: 5px;
 }
-html .body-cronograma .main-cronograma .box-eventos .itens .box-child-events .titulo-evento {
+html .body-cronograma .main-cronograma .box-eventos .show .box-child-events .titulo-evento {
   text-align: center;
   font-size: 30px;
 }
@@ -192,6 +196,7 @@ footer .back {
   position: absolute;
   right: 0;
   margin-right: 20px;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

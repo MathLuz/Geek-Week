@@ -17,22 +17,16 @@
     list-style: none;
     padding: 0;
 }
-.item {
+.itens {
     display: none;
-    margin-bottom: 5px;
 }
 .show {
-    display: block;
+    display: flex;
 }
     </style>
 </head>
 <body>
     <!-- <object data="header.html" width="100%" height="100%"></object> -->
-    <header>
-        <img class="logo" src="img/GeekWeekLogo.png"/>
-        <h1>Geek Week</h1>
-        <img class="iconDevMobile" src="img/devcred.png"/>
-    </header>
     <main>
         <div class="tags">
             <button class="tag-btn" data-tag="all">All</button>
@@ -41,9 +35,9 @@
             <button class="tag-btn" data-tag="nature">Nature</button>
         </div>
         <ul class="item-list">
-            <li class="item" data-tags="food">Delicious Food</li>
-            <li class="item" data-tags="travel">Adventure Trip</li>
-            <li class="item" data-tags="food nature">Picnic in the Park</li>
+            <li class="itens" data-tags="food">Delicious Food</li>
+            <li class="itens" data-tags="travel">Adventure Trip</li>
+            <li class="itens" data-tags="food nature">Picnic in the Park</li>
             <!-- ... more items ... -->
         </ul>
     </main>
@@ -51,7 +45,7 @@
 // Filtro
 document.addEventListener("DOMContentLoaded", function () {
     const tagButtons = document.querySelectorAll(".tag-btn");
-    const items = document.querySelectorAll(".item");
+    const items = document.querySelectorAll(".itens");
 
     tagButtons.forEach(button => {
         button.addEventListener("click", () => {
