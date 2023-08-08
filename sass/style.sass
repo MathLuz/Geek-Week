@@ -8,7 +8,7 @@ html
   align-items: center
   height: 100%
   width: 100%
-  background-color: variables.$corE
+  background-color: variables.$corP
   color: variables.$corC
   font-family: 'Ysabeau SC', sans-serif
 
@@ -48,7 +48,7 @@ html
       z-index: 2
 
     .backgroundImg
-      transform: scaleX(-1)
+      transform: scaleY(-1)
       opacity: 0.4
       position: absolute
       z-index: 0
@@ -91,7 +91,7 @@ html
       align-items: center
 
       .tags
-        background-color: variables.$corE
+        background-color: variables.$corP
         height: 50px
         position: fixed
         display: flex
@@ -105,15 +105,26 @@ html
             font-weight: 600
             height: 20px
             width: 16%
-            background-color: variables.$corE
+            background-color: variables.$corP
             color: variables.$corC
-            border-right: 1px solid #ffffff44
+            border-right: 1px solid variables.$corT
             font-family: 'Ysabeau SC', sans-serif
+            box-sizing: border-box
+            position: relative
         .tag-btn:last-child
             border: none
-
+        .selected::after
+            content: ''
+            position: absolute
+            width: 1px
+            background-color: variables.$corL
+            left: 25%
+            width: 50%
+            height: 2px
+            bottom: -5px
+            // border-bottom: 1px solid variables.$corL
       .infos
-        background-color: variables.$corE
+        background-color: variables.$corP
         position: fixed
         margin-top: 50px
         width: 100%
@@ -149,9 +160,6 @@ html
             max-width: 500px 
             margin: 2px
             background-color: #444
-            display: none
-        .show
-            display: flex
             .horario
                 background-color: variables.$corC
                 color: variables.$corP
@@ -165,6 +173,7 @@ html
                   display: flex
                   flex-direction: row
                   justify-content: space-between
+                  align-items: flex-start
                   .titulo-evento
                     text-align: center
                     font-size: variables.$fSize1
@@ -172,6 +181,18 @@ html
                     border-radius: 8px
                   p
                     padding: 5px
+                div:last-child
+                  align-items: flex-end
+        .palestras
+          background-color: variables.$corAum
+        .games
+          background-color: variables.$corAdo
+        .apres
+          background-color: variables.$corAtr
+        .oficinas
+          background-color: variables.$corAqu
+        .hide
+            display: none
 // FOOTER
 footer
   display: flex
@@ -183,12 +204,13 @@ footer
   background-color: variables.$corL
   height: 50px
   width: 100%
-
   img
     width: 40px
-    height: 40px
     filter: brightness(0)
-
+  a
+    .home
+      width: 35px
+      filter: brightness(0)
   .back
     transform: scaleX(-1)
     position: absolute

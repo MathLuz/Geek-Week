@@ -5,7 +5,7 @@ html {
   align-items: center;
   height: 100%;
   width: 100%;
-  background-color: #1e120d;
+  background-color: #000;
   color: #fff;
   font-family: "Ysabeau SC", sans-serif;
 }
@@ -43,7 +43,7 @@ html .main-index img {
   z-index: 2;
 }
 html .main-index .backgroundImg {
-  transform: scaleX(-1);
+  transform: scaleY(-1);
   opacity: 0.4;
   position: absolute;
   z-index: 0;
@@ -85,7 +85,7 @@ html .body-cronograma .main-cronograma {
   align-items: center;
 }
 html .body-cronograma .main-cronograma .tags {
-  background-color: #1e120d;
+  background-color: #000;
   height: 50px;
   position: fixed;
   display: flex;
@@ -99,16 +99,28 @@ html .body-cronograma .main-cronograma .tags .tag-btn {
   font-weight: 600;
   height: 20px;
   width: 16%;
-  background-color: #1e120d;
+  background-color: #000;
   color: #fff;
-  border-right: 1px solid rgba(255, 255, 255, 0.2666666667);
+  border-right: 1px solid rgba(255, 255, 255, 0.6666666667);
   font-family: "Ysabeau SC", sans-serif;
+  box-sizing: border-box;
+  position: relative;
 }
 html .body-cronograma .main-cronograma .tags .tag-btn:last-child {
   border: none;
 }
+html .body-cronograma .main-cronograma .tags .selected::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  background-color: #f4a917;
+  left: 25%;
+  width: 50%;
+  height: 2px;
+  bottom: -5px;
+}
 html .body-cronograma .main-cronograma .infos {
-  background-color: #1e120d;
+  background-color: #000;
   position: fixed;
   margin-top: 50px;
   width: 100%;
@@ -123,16 +135,16 @@ html .body-cronograma .main-cronograma .infos li {
   border-radius: 7px;
 }
 html .body-cronograma .main-cronograma .infos .inf-palestras {
-  background-color: #6A91F6;
+  background-color: #6b91F7;
 }
 html .body-cronograma .main-cronograma .infos .inf-games {
   background-color: #2963FF;
 }
 html .body-cronograma .main-cronograma .infos .inf-apres {
-  background-color: #5E74AF;
+  background-color: #5f75AF;
 }
 html .body-cronograma .main-cronograma .infos .inf-oficinas {
-  background-color: #0A3093;
+  background-color: #0b3092;
 }
 html .body-cronograma .main-cronograma .box-eventos {
   margin-top: 110px;
@@ -148,31 +160,51 @@ html .body-cronograma .main-cronograma .box-eventos .itens {
   max-width: 500px;
   margin: 2px;
   background-color: #444;
-  display: none;
 }
-html .body-cronograma .main-cronograma .box-eventos .show {
-  display: flex;
-}
-html .body-cronograma .main-cronograma .box-eventos .show .horario {
+html .body-cronograma .main-cronograma .box-eventos .itens .horario {
   background-color: #fff;
   color: #000;
   padding: 0 10px;
 }
-html .body-cronograma .main-cronograma .box-eventos .show .box-child-events {
+html .body-cronograma .main-cronograma .box-eventos .itens .box-child-events {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   padding: 15px;
 }
-html .body-cronograma .main-cronograma .box-eventos .show .box-child-events div img {
-  border-radius: 8px;
+html .body-cronograma .main-cronograma .box-eventos .itens .box-child-events div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
 }
-html .body-cronograma .main-cronograma .box-eventos .show .box-child-events div p {
-  padding: 5px;
-}
-html .body-cronograma .main-cronograma .box-eventos .show .box-child-events .titulo-evento {
+html .body-cronograma .main-cronograma .box-eventos .itens .box-child-events div .titulo-evento {
   text-align: center;
   font-size: 30px;
+}
+html .body-cronograma .main-cronograma .box-eventos .itens .box-child-events div img {
+  border-radius: 8px;
+}
+html .body-cronograma .main-cronograma .box-eventos .itens .box-child-events div p {
+  padding: 5px;
+}
+html .body-cronograma .main-cronograma .box-eventos .itens .box-child-events div:last-child {
+  align-items: flex-end;
+}
+html .body-cronograma .main-cronograma .box-eventos .palestras {
+  background-color: #6b91F7;
+}
+html .body-cronograma .main-cronograma .box-eventos .games {
+  background-color: #2963FF;
+}
+html .body-cronograma .main-cronograma .box-eventos .apres {
+  background-color: #5f75AF;
+}
+html .body-cronograma .main-cronograma .box-eventos .oficinas {
+  background-color: #0b3092;
+}
+html .body-cronograma .main-cronograma .box-eventos .hide {
+  display: none;
 }
 
 footer {
@@ -188,7 +220,10 @@ footer {
 }
 footer img {
   width: 40px;
-  height: 40px;
+  filter: brightness(0);
+}
+footer a .home {
+  width: 35px;
   filter: brightness(0);
 }
 footer .back {
