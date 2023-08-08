@@ -155,17 +155,20 @@ html
                 padding: 0 10px
             .box-child-events
                 display: flex
-                flex-direction: row
+                flex-direction: column
                 justify-content: space-between
                 padding: 15px
                 div
-                    img
-                        border-radius: 8px 
-                    p
-                        padding: 5px
-                .titulo-evento
+                  display: flex
+                  flex-direction: row
+                  justify-content: space-between
+                  .titulo-evento
                     text-align: center
                     font-size: variables.$fSize1
+                  img
+                    border-radius: 8px
+                  p
+                    padding: 5px
 // FOOTER
 footer
   display: flex
