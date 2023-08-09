@@ -1,4 +1,5 @@
 @use 'variables'
+// @import 'fonts'
 // @use 'mixins'
 // Estilos globais
 html
@@ -10,7 +11,7 @@ html
   width: 100%
   background-color: variables.$corP
   color: variables.$corC
-  font-family: 'Ysabeau SC', sans-serif
+  font-family: 'Sui Generis', sans-serif
 
   // HEADER
   header
@@ -23,12 +24,15 @@ html
     align-items: center
     background-color: variables.$corL
     color: variables.$corP
-
     .logo
       height: 55px
-
-    .icon-dev-mobile
-      height: 30px
+    a
+      height: 40px
+      .icon-dev-mobile
+        height: 100%
+    .link-devs
+      position: absolute
+      right: 15px
 
   body
     height: 100%
@@ -108,7 +112,7 @@ html
             background-color: variables.$corP
             color: variables.$corC
             border-right: 1px solid variables.$corT
-            font-family: 'Ysabeau SC', sans-serif
+            font-family: 'Sui Generis', sans-serif
             box-sizing: border-box
             position: relative
         .tag-btn:last-child
@@ -137,6 +141,7 @@ html
         li
             padding: 3px 10px
             border-radius: 7px
+            font-size: 13px
 
         .inf-palestras
             background-color: variables.$corAum
@@ -193,6 +198,35 @@ html
           background-color: variables.$corAqu
         .hide
             display: none
+          
+// PÁGINA SOBRE MUNDO GEEK
+.body-sobre
+  .main-sobre
+    margin-top: 80px
+    padding: 10px 30px 60px 30px
+    section
+      display: flex
+      flex-direction: column
+      align-items: center
+      gap: 15px 0
+      margin: 10px 0
+      img
+        width: 350px
+        max-width: 100%
+        border-radius: 10px
+      h2
+        align-items: center
+        font-size: 29px
+        font-weight: 200
+      p
+        font-size: 18px
+        font-family: verdana
+        font-weight: 200
+        letter-spacing: 1px
+        strong
+          font-size: 24px
+          font-family: 'Sui Generis', sans-serif
+
 // FOOTER
 footer
   display: flex

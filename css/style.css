@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Sui Generis";
+  src: url("../fonts/x-man.ttf") format("truetype");
+}
 html {
   display: flex;
   flex-direction: column;
@@ -7,7 +11,7 @@ html {
   width: 100%;
   background-color: #000;
   color: #fff;
-  font-family: "Ysabeau SC", sans-serif;
+  font-family: "Sui Generis", sans-serif;
 }
 html header {
   position: fixed;
@@ -23,8 +27,15 @@ html header {
 html header .logo {
   height: 55px;
 }
-html header .icon-dev-mobile {
-  height: 30px;
+html header a {
+  height: 40px;
+}
+html header a .icon-dev-mobile {
+  height: 100%;
+}
+html header .link-devs {
+  position: absolute;
+  right: 15px;
 }
 html body {
   height: 100%;
@@ -102,7 +113,7 @@ html .body-cronograma .main-cronograma .tags .tag-btn {
   background-color: #000;
   color: #fff;
   border-right: 1px solid rgba(255, 255, 255, 0.6666666667);
-  font-family: "Ysabeau SC", sans-serif;
+  font-family: "Sui Generis", sans-serif;
   box-sizing: border-box;
   position: relative;
 }
@@ -133,6 +144,7 @@ html .body-cronograma .main-cronograma .infos {
 html .body-cronograma .main-cronograma .infos li {
   padding: 3px 10px;
   border-radius: 7px;
+  font-size: 13px;
 }
 html .body-cronograma .main-cronograma .infos .inf-palestras {
   background-color: #6b91F7;
@@ -205,6 +217,38 @@ html .body-cronograma .main-cronograma .box-eventos .oficinas {
 }
 html .body-cronograma .main-cronograma .box-eventos .hide {
   display: none;
+}
+
+.body-sobre .main-sobre {
+  margin-top: 80px;
+  padding: 10px 30px 60px 30px;
+}
+.body-sobre .main-sobre section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px 0;
+  margin: 10px 0;
+}
+.body-sobre .main-sobre section img {
+  width: 350px;
+  max-width: 100%;
+  border-radius: 10px;
+}
+.body-sobre .main-sobre section h2 {
+  align-items: center;
+  font-size: 29px;
+  font-weight: 200;
+}
+.body-sobre .main-sobre section p {
+  font-size: 18px;
+  font-family: verdana;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+.body-sobre .main-sobre section p strong {
+  font-size: 24px;
+  font-family: "Sui Generis", sans-serif;
 }
 
 footer {

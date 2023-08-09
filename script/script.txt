@@ -1,44 +1,39 @@
+// SCRIPT SEM INFLUÊNCIA DO DIA DE HJ
 // Voltar um página
 function goBack() {
     window.history.back();
 }
-
-// Função para os filtros por dia
+// Seleciona todos os botões de tag e todos os itens de eventos
 const tagButtons = document.querySelectorAll(".tag-btn");
 const eventItems = document.querySelectorAll(".itens");
 
 // Função para filtrar eventos por tag
 function filterEvents(selectedTag) {
+    // Oculta todos os itens de evento
     eventItems.forEach(item => {
         item.classList.add("hide");
     });
 
+    // Mostra apenas os itens de evento do dia selecionado
     const selectedItems = document.querySelectorAll(`[data-tag="${selectedTag}"]`);
     selectedItems.forEach(item => {
         item.classList.remove("hide");
     });
 
+    // Remove a classe "selected" de todos os botões e adiciona ao botão clicado
     tagButtons.forEach(btn => {
         btn.classList.remove("selected");
     });
 }
 
-// Obtém o dia da semana atual (0 = Domingo, 1 = Segunda, ..., 6 = Sábado)
-const currentDayIndex = new Date().getDay();
-
-// Dias da semana correspondentes aos botões de tag
-const daysOfWeek = ["seg", "seg", "ter", "qua", "qui", "sex", "sab"];
-
-// Dia da semana atual (dom, seg, ter, etc.)
-const currentDay = daysOfWeek[currentDayIndex];
-
 // Filtra eventos quando a página é carregada
 document.addEventListener("DOMContentLoaded", function () {
-    filterEvents(currentDay); // Filtra eventos inicialmente pelo dia atual
+    const initialTag = "seg"; // Dia inicial para exibição
+    filterEvents(initialTag); // Filtra eventos inicialmente por "seg"
 
-    // Encontra o botão correspondente ao dia atual e adiciona a classe "selected"
-    const currentButton = document.querySelector(`.tag-btn[data-tag="${currentDay}"]`);
-    currentButton.classList.add("selected");
+    // Encontra o botão correspondente ao dia inicial e adiciona a classe "selected"
+    const initialButton = document.querySelector(`.tag-btn[data-tag="${initialTag}"]`);
+    initialButton.classList.add("selected");
 });
 
 // Adiciona um evento de clique a todos os botões de tag
