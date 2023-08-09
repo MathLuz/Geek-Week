@@ -9,7 +9,7 @@ html {
   align-items: center;
   height: 100%;
   width: 100%;
-  background-color: #000;
+  background-color: #0a0a0a;
   color: #fff;
   font-family: "Sui Generis", sans-serif;
 }
@@ -17,25 +17,37 @@ html header {
   position: fixed;
   width: 100%;
   height: 80px;
+  background-color: #f4a917;
+  color: #0a0a0a;
+  display: flex;
+  justify-content: center;
+}
+html header nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  background-color: #f4a917;
-  color: #000;
-}
-html header .logo {
-  height: 55px;
-}
-html header a {
-  height: 40px;
-}
-html header a .icon-dev-mobile {
+  width: 90%;
   height: 100%;
 }
-html header .link-devs {
+html header nav h1 {
+  font-size: 22px;
+}
+html header nav .logo {
+  height: 55px;
+}
+html header nav a {
+  height: 40px;
+}
+html header nav a .icon-dev-mobile {
+  height: 100%;
+}
+html header nav .link-devs {
   position: absolute;
-  right: 15px;
+  right: 10%;
+}
+html header .header-cronograma {
+  justify-content: space-between;
 }
 html body {
   height: 100%;
@@ -96,7 +108,7 @@ html .body-cronograma .main-cronograma {
   align-items: center;
 }
 html .body-cronograma .main-cronograma .tags {
-  background-color: #000;
+  background-color: #0a0a0a;
   height: 50px;
   position: fixed;
   display: flex;
@@ -110,10 +122,10 @@ html .body-cronograma .main-cronograma .tags .tag-btn {
   font-weight: 600;
   height: 20px;
   width: 16%;
-  background-color: #000;
+  background-color: #0a0a0a;
   color: #fff;
   border-right: 1px solid rgba(255, 255, 255, 0.6666666667);
-  font-family: "Sui Generis", sans-serif;
+  font-family: verdana;
   box-sizing: border-box;
   position: relative;
 }
@@ -131,7 +143,8 @@ html .body-cronograma .main-cronograma .tags .selected::after {
   bottom: -5px;
 }
 html .body-cronograma .main-cronograma .infos {
-  background-color: #000;
+  background-color: #0a0a0a;
+  font-family: verdana;
   position: fixed;
   margin-top: 50px;
   width: 100%;
@@ -169,13 +182,13 @@ html .body-cronograma .main-cronograma .box-eventos {
 }
 html .body-cronograma .main-cronograma .box-eventos .itens {
   width: 100%;
-  max-width: 500px;
+  max-width: 530px;
   margin: 2px;
   background-color: #444;
 }
 html .body-cronograma .main-cronograma .box-eventos .itens .horario {
   background-color: #fff;
-  color: #000;
+  color: #0a0a0a;
   padding: 0 10px;
 }
 html .body-cronograma .main-cronograma .box-eventos .itens .box-child-events {
@@ -198,7 +211,11 @@ html .body-cronograma .main-cronograma .box-eventos .itens .box-child-events div
   border-radius: 8px;
 }
 html .body-cronograma .main-cronograma .box-eventos .itens .box-child-events div p {
-  padding: 5px;
+  font-family: verdana;
+  margin: 10px;
+}
+html .body-cronograma .main-cronograma .box-eventos .itens .box-child-events div p strong {
+  font-weight: 800;
 }
 html .body-cronograma .main-cronograma .box-eventos .itens .box-child-events div:last-child {
   align-items: flex-end;
@@ -220,7 +237,7 @@ html .body-cronograma .main-cronograma .box-eventos .hide {
 }
 
 .body-sobre .main-sobre {
-  margin-top: 80px;
+  margin-top: 90px;
   padding: 10px 30px 60px 30px;
 }
 .body-sobre .main-sobre section {
@@ -249,6 +266,56 @@ html .body-cronograma .main-cronograma .box-eventos .hide {
 .body-sobre .main-sobre section p strong {
   font-size: 24px;
   font-family: "Sui Generis", sans-serif;
+}
+
+.body-devs .backgroundImg {
+  margin-top: 100px;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.1;
+}
+.body-devs .main-devs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  padding: 10px 30px 60px 30px;
+}
+.body-devs .main-devs .devs {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 25px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6666666667);
+}
+.body-devs .main-devs .devs:last-child {
+  border: none;
+}
+.body-devs .main-devs .photo-dev {
+  border-radius: 10px;
+  width: 50%;
+  min-width: 100px;
+}
+.body-devs .main-devs div {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.body-devs .main-devs div a {
+  color: #fff;
+  font-family: verdana;
+}
+.body-devs .main-devs div a img {
+  height: 20px;
+}
+.body-devs .main-devs div .funcao {
+  font-family: "Sui Generis", sans-serif;
+  font-size: 15px;
 }
 
 footer {
