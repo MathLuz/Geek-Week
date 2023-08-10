@@ -1,8 +1,3 @@
-// Voltar um página
-function goBack() {
-    window.history.back();
-}
-
 // Função para os filtros por dia
 const tagButtons = document.querySelectorAll(".tag-btn");
 const eventItems = document.querySelectorAll(".itens");

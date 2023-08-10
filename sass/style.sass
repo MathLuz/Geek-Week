@@ -30,7 +30,9 @@ html
       width: 90%
       height: 100%
       h1
-        font-size: 22px
+        font-size: 23px
+        text-align: center
+        width: 75%
       .logo
         height: 55px
       a
@@ -40,12 +42,19 @@ html
       .link-devs
         position: absolute
         right: 10%
+        cursor: pointer
     .header-cronograma
       justify-content: space-between
   body
     height: 100%
     width: 100%
-
+    .background-img
+      position: fixed
+      opacity: 0.1
+      width: 100%
+      z-index: -1
+      top: 25%
+        
   // MAIN INDEX
   .main-index
     height: 100%
@@ -272,6 +281,38 @@ html
         // text-align: center
         font-family: variables.$fontUm
         font-size: 15px
+// ATIVIDADES
+.body-atividades
+  .main-atividades
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-top: 100px
+    padding: 10px 50px 60px 50px
+    article
+      font-size: 16px
+      width: 100%
+      display: flex
+      flex-direction: column
+      gap: 20px 0
+      text-align: center
+      h2
+        font-size: 29px
+        font-weight: 100
+        margin-bottom: 10px
+      .img-atividade
+        border-radius: 10px
+      .infos-atividade
+        margin-bottom: 40px 
+        font-family: variables.$fontDo
+        display: flex
+        flex-direction: column
+        div
+          display: flex
+          flex-direction: row
+          justify-content: space-between
+      p
+        font-family: variables.$fontDo
 
 
 // FOOTER
