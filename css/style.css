@@ -202,6 +202,7 @@ html .body-cronograma .main-cronograma .box-eventos .itens .horario {
   padding: 0 10px;
 }
 html .body-cronograma .main-cronograma .box-eventos .itens .box-child-events {
+  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -338,6 +339,7 @@ html .body-cronograma .main-cronograma .box-eventos .hide {
 .body-atividades .main-atividades article {
   font-size: 16px;
   width: 100%;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   gap: 20px 0;
@@ -350,6 +352,7 @@ html .body-cronograma .main-cronograma .box-eventos .hide {
 }
 .body-atividades .main-atividades article .img-atividade {
   border-radius: 10px;
+  width: 100%;
 }
 .body-atividades .main-atividades article .infos-atividade {
   margin-bottom: 40px;
