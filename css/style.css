@@ -31,7 +31,9 @@ html header nav {
   height: 100%;
 }
 html header nav h1 {
-  font-size: 22px;
+  font-size: 23px;
+  text-align: center;
+  width: 75%;
 }
 html header nav .logo {
   height: 55px;
@@ -45,6 +47,7 @@ html header nav a .icon-dev-mobile {
 html header nav .link-devs {
   position: absolute;
   right: 10%;
+  cursor: pointer;
 }
 html header .header-cronograma {
   justify-content: space-between;
@@ -52,6 +55,13 @@ html header .header-cronograma {
 html body {
   height: 100%;
   width: 100%;
+}
+html body .background-img {
+  position: fixed;
+  opacity: 0.1;
+  width: 100%;
+  z-index: -1;
+  top: 25%;
 }
 html .main-index {
   height: 100%;
@@ -316,6 +326,44 @@ html .body-cronograma .main-cronograma .box-eventos .hide {
 .body-devs .main-devs div .funcao {
   font-family: "Sui Generis", sans-serif;
   font-size: 15px;
+}
+
+.body-atividades .main-atividades {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  padding: 10px 50px 60px 50px;
+}
+.body-atividades .main-atividades article {
+  font-size: 16px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+  text-align: center;
+}
+.body-atividades .main-atividades article h2 {
+  font-size: 29px;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+.body-atividades .main-atividades article .img-atividade {
+  border-radius: 10px;
+}
+.body-atividades .main-atividades article .infos-atividade {
+  margin-bottom: 40px;
+  font-family: verdana;
+  display: flex;
+  flex-direction: column;
+}
+.body-atividades .main-atividades article .infos-atividade div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.body-atividades .main-atividades article p {
+  font-family: verdana;
 }
 
 footer {
