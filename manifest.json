@@ -7,7 +7,7 @@
   "short_name": "Geek Week",
   "orientation": "any",
   "scope": "/",
-  "start_url": "/index.html",
+  "start_url": "https://mathluz.github.io/Geek-Week/",
   "theme_color": "#f4a917",
   "categories": [
     "education",
