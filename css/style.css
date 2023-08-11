@@ -135,7 +135,7 @@ html .body-cronograma .main-cronograma .tags .tag-btn {
   background-color: #0a0a0a;
   color: #fff;
   border-right: 1px solid rgba(255, 255, 255, 0.6666666667);
-  font-family: verdana;
+  font-family: Segoe UI;
   box-sizing: border-box;
   position: relative;
 }
@@ -154,7 +154,7 @@ html .body-cronograma .main-cronograma .tags .selected::after {
 }
 html .body-cronograma .main-cronograma .infos {
   background-color: #0a0a0a;
-  font-family: verdana;
+  font-family: Segoe UI;
   position: fixed;
   margin-top: 50px;
   width: 100%;
@@ -222,7 +222,7 @@ html .body-cronograma .main-cronograma .box-eventos .itens .box-child-events div
   border-radius: 8px;
 }
 html .body-cronograma .main-cronograma .box-eventos .itens .box-child-events div p {
-  font-family: verdana;
+  font-family: Segoe UI;
   margin: 10px;
 }
 html .body-cronograma .main-cronograma .box-eventos .itens .box-child-events div p strong {
@@ -270,7 +270,7 @@ html .body-cronograma .main-cronograma .box-eventos .hide {
 }
 .body-sobre .main-sobre section p {
   font-size: 18px;
-  font-family: verdana;
+  font-family: Segoe UI;
   font-weight: 200;
   letter-spacing: 1px;
 }
@@ -319,7 +319,7 @@ html .body-cronograma .main-cronograma .box-eventos .hide {
 }
 .body-devs .main-devs div a {
   color: #fff;
-  font-family: verdana;
+  font-family: Segoe UI;
 }
 .body-devs .main-devs div a img {
   height: 20px;
@@ -356,7 +356,7 @@ html .body-cronograma .main-cronograma .box-eventos .hide {
 }
 .body-atividades .main-atividades article .infos-atividade {
   margin-bottom: 40px;
-  font-family: verdana;
+  font-family: Segoe UI;
   display: flex;
   flex-direction: column;
 }
@@ -366,7 +366,7 @@ html .body-cronograma .main-cronograma .box-eventos .hide {
   justify-content: space-between;
 }
 .body-atividades .main-atividades article p {
-  font-family: verdana;
+  font-family: Segoe UI;
 }
 
 footer {

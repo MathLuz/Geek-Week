@@ -1,18 +1,22 @@
 {
-    "lang": "pt",
-    "dir": "ltr",
-    "name": "Meu site em PWA",
-    "short_name": "sitePWA",
-    "icons": [
-      {
-        "src": "\/assets\/images\/touch\/android-chrome-192x192.png",
-        "sizes": "192x192",
-        "type": "image\/png"
-      }
-    ],
-    "theme_color": "#1a1a1a",
-    "background_color": "#1a1a1a",
-    "start_url": "/",
-    "display": "standalone",
-    "orientation": "natural"
-  }
+  "background_color": "#0a0a0a",
+  "description": "",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Geek Week",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Geek Week",
+  "start_url": "/",
+  "theme_color": "#f4a917",
+  "categories": [],
+  "screenshots": [],
+  "icons": [
+    {
+      "src": "img/geekweeklogo.png",
+      "type": "image/png",
+      "sizes": "542x541"
+    }
+  ],
+  "shortcuts": []
+}
