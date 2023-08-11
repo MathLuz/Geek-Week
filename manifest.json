@@ -7,7 +7,7 @@
   "orientation": "any",
   "scope": "/",
   "short_name": "GWSenac",
-  "start_url": "/",
+  "start_url": "/index.html",
   "theme_color": "#f4a917",
   "categories": [
     "education",
