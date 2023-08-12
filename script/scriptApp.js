@@ -72,12 +72,4 @@ if (!window.matchMedia('(display-mode: standalone)').matches) {
         });
       }
     }
-    Swal.fire({
-      background: '#0a0a0a',
-      color: '#fff',
-      icon: 'success',
-      title: 'Divirta-se nesta incrível semana',
-      showConfirmButton: false,
-      timer: 2000
-    });
   }
