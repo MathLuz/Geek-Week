@@ -12,6 +12,7 @@ html {
   background-color: #0a0a0a;
   color: #fff;
   font-family: "Sui Generis", sans-serif;
+  transition: 0.5s;
 }
 html header {
   position: fixed;
