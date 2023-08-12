@@ -25,9 +25,13 @@ if (!window.matchMedia('(display-mode: standalone)').matches) {
   if (!hasUserVisitedPage()) {
 
     // CASO SEJA ABERTO NO SAFARI
+    // Verifica se o navegador é o Safari
+    var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+    // Verifica se está em um dispositivo iOS
+    var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
-    if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
-  
+    if (isSafari && isIOS) {
+
       //console.log("Você está usando o Safari.");
       // Sweet Alert para manual de Download no Safari
       Swal.fire({
@@ -56,19 +60,19 @@ if (!window.matchMedia('(display-mode: standalone)').matches) {
           baixarApp();
         }
       });
-  
+
       // PARA BAIXAR O APP NO ANDROID
-  
+
       let deferredPrompt;
-  
+
       window.addEventListener('beforeinstallprompt', (event) => {
         event.preventDefault(); // Impede o prompt automático
         deferredPrompt = event; // Armazena o evento para uso posterior
       });
-  
+
       function baixarApp() {
         if (deferredPrompt) {
-  
+
           // Exibe o prompt de instalação
           deferredPrompt.prompt();
           /*
