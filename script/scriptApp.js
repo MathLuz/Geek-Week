@@ -69,21 +69,19 @@ if (!window.matchMedia('(display-mode: standalone)').matches) {
     // CASO SEJA ABERTO NO SAFARI
     if (navigator.userAgent.indexOf("Safari") !== -1 && navigator.userAgent.indexOf("Chrome") === -1) {
       //console.log("Você está usando o Safari.");
-      
+      Swal.fire({
+        background: '#0a0a0a',
+        color: '#fff',
+        title: 'Baixe o App!!',
+        text: 'Para ficar por dentro de tudo que precisa saber sobre a semana Geek',
+        imageUrl: 'img/downloadSafari.jpg',
+        imageWidth: 400,
+        imageAlt: 'Baixar o App Geek Week',
+        confirmButtonColor: '#f4a917',
+      });
     }
 
     // Depois de exibir a função, marque o usuário como visitado 
     setVisitedCookie();
   }
 }
-
-Swal.fire({
-  background: '#0a0a0a',
-  color: '#fff',
-  title: 'Baixe o App!!',
-  text: 'Para ficar por dentro de tudo que precisa saber sobre a semana Geek',
-  imageUrl: 'img/downloadSafari.jpg',
-  imageWidth: 400,
-  imageAlt: 'Baixar o App Geek Week',
-  confirmButtonColor: '#f4a917',
-});
