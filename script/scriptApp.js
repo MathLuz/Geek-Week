@@ -42,7 +42,6 @@ window.addEventListener('beforeinstallprompt', (event) => {
   deferredPrompt = event; // Armazena o evento para uso posterior
 });
 
-function exibirPrompt() {
   if (deferredPrompt) {
     // Exibe o prompt de instalação
     deferredPrompt.prompt();
@@ -58,7 +57,7 @@ function exibirPrompt() {
       deferredPrompt = null; // Limpa a referência ao evento
     });
   }
-}
+  
   // Sweet Alert
   Swal.fire({
     title: 'Baixe o App!!',
