@@ -12,7 +12,6 @@ html {
   background-color: #0a0a0a;
   color: #fff;
   font-family: "Sui Generis", sans-serif;
-  transition: 0.5s;
 }
 html header {
   position: fixed;
@@ -398,8 +397,9 @@ footer .back {
 }
 
 .swal2-styled {
+  font-family: Segoe UI;
   font-size: 18px !important;
-  font-weight: 900 !important;
+  font-weight: 700 !important;
 }
 
 /*# sourceMappingURL=style.css.map */
