@@ -1,6 +1,6 @@
 // PARA BAIXAR O APP NO ANDROID
-
-let deferredPrompt;
+/*
+    let deferredPrompt;
 
     window.addEventListener('beforeinstallprompt', (event) => {
       event.preventDefault(); // Impede o prompt automático
@@ -32,7 +32,7 @@ let deferredPrompt;
         // showConfirmButton: false,
         // timer: 2000
       // });
-    }
+    }*/
 
 // VENDO SE FOI ABERTO EM NO SITE
 
@@ -53,7 +53,29 @@ if (!window.matchMedia('(display-mode: standalone)').matches) {
     confirmButtonText: 'Quero baixar!'
   }).then((result) => {
     if (result.isConfirmed) {
-      baixarApp();
+      
+    let deferredPrompt;
+
+    window.addEventListener('beforeinstallprompt', (event) => {
+      event.preventDefault(); // Impede o prompt automático
+      deferredPrompt = event; // Armazena o evento para uso posterior
+    });
+
+    function baixarApp() {
+      console.log('ativou em');
+      if (deferredPrompt) {
+        // Exibe o prompt de instalação
+        deferredPrompt.prompt();
+
+        // Captura o resultado da escolha do usuário
+        deferredPrompt.userChoice.then((choiceResult) => {
+          if (choiceResult.outcome === 'accepted') {
+            console.log('Usuário aceitou instalar o aplicativo');
+          }
+          deferredPrompt = null; // Limpa a referência ao evento
+        });
+      }
+    }
     }
   });
   }
