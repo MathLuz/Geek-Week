@@ -15,7 +15,7 @@ if (!window.matchMedia('(display-mode: standalone)').matches) {
     // Obter a data atual
     var now = new Date();
     // Definir a data de expiração para 10 minutos após a data atual
-    var expirationDate = new Date(now.getTime() + 10 * 60 * 1000);  // min * seg * mil
+    var expirationDate = new Date(now.getTime() + 0 * 60 * 1000);  // min * seg * mil
     // Formatar a data de expiração para o formato GMT
     var expiresGMT = expirationDate.toUTCString();
     // Definir o cookie com a data de expiração ajustada
@@ -69,6 +69,7 @@ if (!window.matchMedia('(display-mode: standalone)').matches) {
     // CASO SEJA ABERTO NO SAFARI
     if (navigator.userAgent.indexOf("Safari") !== -1 && navigator.userAgent.indexOf("Chrome") === -1) {
       //console.log("Você está usando o Safari.");
+      // Sweet Alert para manual de Download no Safari
       Swal.fire({
         background: '#0a0a0a',
         color: '#fff',

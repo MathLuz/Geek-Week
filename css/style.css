@@ -397,4 +397,9 @@ footer .back {
   cursor: pointer;
 }
 
+.swal2-styled {
+  font-size: 18px !important;
+  font-weight: 900 !important;
+}
+
 /*# sourceMappingURL=style.css.map */
