@@ -24,6 +24,14 @@ let deferredPrompt;
           deferredPrompt = null; // Limpa a referência ao evento
         });
       }
+      // Swal.fire({
+        // background: '#0a0a0a',
+        // color: '#fff',
+        // icon: 'success',
+        // title: 'Divirta-se nesta incrível semana',
+        // showConfirmButton: false,
+        // timer: 2000
+      // });
     }
 
 // VENDO SE FOI ABERTO EM NO SITE
@@ -48,14 +56,6 @@ if (!window.matchMedia('(display-mode: standalone)').matches) {
       baixarApp();
     }
   });
-    Swal.fire({
-      background: '#0a0a0a',
-      color: '#fff',
-      icon: 'success',
-      title: 'Divirta-se nesta incrível semana',
-      showConfirmButton: false,
-      timer: 2000
-    });
   }
 
  // else {
