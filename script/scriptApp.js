@@ -1,5 +1,5 @@
 // PARA BAIXAR O APP NO ANDROID
-
+/*
     let deferredPrompt;
 
     window.addEventListener('beforeinstallprompt', (event) => {
@@ -25,7 +25,7 @@
         });
       }
     }
-
+*/
 // VENDO SE FOI ABERTO EM NO SITE
 
 if (!window.matchMedia('(display-mode: standalone)').matches) {
@@ -47,6 +47,7 @@ if (!window.matchMedia('(display-mode: standalone)').matches) {
       baixarApp();
     }
   });
+// PARA BAIXAR O APP NO ANDROID
     let deferredPrompt;
 
     window.addEventListener('beforeinstallprompt', (event) => {
