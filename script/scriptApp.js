@@ -51,8 +51,6 @@ if (!window.matchMedia('(display-mode: standalone)').matches) {
       baixar()
     }
   });
-
-  function handleDownload() {
     let deferredPrompt;
 
     window.addEventListener('beforeinstallprompt', (event) => {
@@ -60,7 +58,7 @@ if (!window.matchMedia('(display-mode: standalone)').matches) {
       deferredPrompt = event; // Armazena o evento para uso posterior
     });
 
-    function exibirPrompt() {
+    function baixar() {
       if (deferredPrompt) {
         // Exibe o prompt de instalação
         deferredPrompt.prompt();
