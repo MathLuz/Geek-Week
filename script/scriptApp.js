@@ -25,8 +25,8 @@ if (!window.matchMedia('(display-mode: standalone)').matches) {
   if (!hasUserVisitedPage()) {
 
     // CASO SEJA ABERTO NO SAFARI
-    
-    if (navigator.userAgent.indexOf("Safari") !== -1 && navigator.userAgent.indexOf("Chrome") === -1) {
+
+    if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
   
       //console.log("Você está usando o Safari.");
       // Sweet Alert para manual de Download no Safari
