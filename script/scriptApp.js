@@ -44,10 +44,9 @@ if (!window.matchMedia('(display-mode: standalone)').matches) {
     cancelButtonColor: '#d33',
     confirmButtonText: 'Quero baixar!',
     preConfirm: () => {
-      handleDownload();
+      baixarApp();
     }
   });
-  function handleDownload() {
     let deferredPrompt;
 
     window.addEventListener('beforeinstallprompt', (event) => {
@@ -82,4 +81,3 @@ if (!window.matchMedia('(display-mode: standalone)').matches) {
       timer: 2000
     });
   }
-}
