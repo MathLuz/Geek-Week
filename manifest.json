@@ -3,7 +3,7 @@
   "description": "Baixe o aplicativo pasa saber tudo sobre a semana Geek Week no Senac Lapa Tito",
   "dir": "ltr",
   "display": "standalone",
-  "name": "Geek Week - Senac Tito",
+  "name": "Geek Week - Senac Lapa Tito",
   "short_name": "Geek Week",
   "orientation": "any",
   "scope": "/",
@@ -24,7 +24,7 @@
   ],
   "icons": [
     {
-      "src": "img/geekweeklogo.png",
+      "src": "img/iconlogoapp.png",
       "type": "image/png",
       "sizes": "541x541"
     }
