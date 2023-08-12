@@ -86,7 +86,7 @@ if (!window.matchMedia('(display-mode: standalone)').matches) {
     });
   }
 
-} // else {
+ // else {
       // Código a ser executado quando estiver em modo autônomo (PWA)
       // console.log("Está em modo autônomo");
   // }
