@@ -33,31 +33,8 @@ let deferredPrompt;
    
   if (!window.matchMedia('(display-mode: standalone)').matches) {
       // Código a ser executado quando NÃO estiver em modo autônomo (navegador comum)
-      console.log("Não está em modo autônomo");
-  
-let deferredPrompt;
-
-window.addEventListener('beforeinstallprompt', (event) => {
-  event.preventDefault(); // Impede o prompt automático
-  deferredPrompt = event; // Armazena o evento para uso posterior
-});
-
-  if (deferredPrompt) {
-    // Exibe o prompt de instalação
-    deferredPrompt.prompt();
-
-    // Captura o resultado da escolha do usuário
-    deferredPrompt.userChoice.then((choiceResult) => {
-      if (choiceResult.outcome === 'accepted') {
-        console.log('Usuário aceitou instalar o aplicativo');
-      } else {
-        alert('Usuário recusou a instalação do aplicativo');
-      }
-
-      deferredPrompt = null; // Limpa a referência ao evento
-    });
-  }
-  
+      // console.log("Não está em modo autônomo");
+   
   // Sweet Alert
   Swal.fire({
     title: 'Baixe o App!!',
@@ -79,6 +56,18 @@ window.addEventListener('beforeinstallprompt', (event) => {
         showConfirmButton: false,
         timer: 2000
       })
+      
+  let deferredPrompt;
+
+  window.addEventListener('beforeinstallprompt', (event) => {
+    event.preventDefault(); // Impede o prompt automático
+    deferredPrompt = event; // Armazena o evento para uso posterior
+  });
+    if (deferredPrompt) {
+      // Exibe o prompt de instalação
+      deferredPrompt.prompt();
+    }
+  
     }
   })
   } // else {
