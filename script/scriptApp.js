@@ -1,5 +1,5 @@
 // PARA BAIXAR O APP NO ANDROID
-/*
+
     let deferredPrompt;
 
     window.addEventListener('beforeinstallprompt', (event) => {
@@ -24,15 +24,7 @@
           deferredPrompt = null; // Limpa a referência ao evento
         });
       }
-      // Swal.fire({
-        // background: '#0a0a0a',
-        // color: '#fff',
-        // icon: 'success',
-        // title: 'Divirta-se nesta incrível semana',
-        // showConfirmButton: false,
-        // timer: 2000
-      // });
-    }*/
+    }
 
 // VENDO SE FOI ABERTO EM NO SITE
 
@@ -50,10 +42,12 @@ if (!window.matchMedia('(display-mode: standalone)').matches) {
     showCancelButton: true,
     confirmButtonColor: '#f4a917',
     cancelButtonColor: '#d33',
-    confirmButtonText: 'Quero baixar!'
-  }).then((result) => {
-    if (result.isConfirmed) {
-      
+    confirmButtonText: 'Quero baixar!',
+    preConfirm: () => {
+      handleDownload();
+    }
+  });
+  function handleDownload() {
     let deferredPrompt;
 
     window.addEventListener('beforeinstallprompt', (event) => {
@@ -62,7 +56,7 @@ if (!window.matchMedia('(display-mode: standalone)').matches) {
     });
 
     function baixarApp() {
-      console.log('ativou em');
+      console.log('ativou em')
       if (deferredPrompt) {
         // Exibe o prompt de instalação
         deferredPrompt.prompt();
@@ -71,16 +65,21 @@ if (!window.matchMedia('(display-mode: standalone)').matches) {
         deferredPrompt.userChoice.then((choiceResult) => {
           if (choiceResult.outcome === 'accepted') {
             console.log('Usuário aceitou instalar o aplicativo');
+          } else {
+            alert('Usuário recusou a instalação do aplicativo');
           }
+
           deferredPrompt = null; // Limpa a referência ao evento
         });
       }
     }
-    }
-  });
+    Swal.fire({
+      background: '#0a0a0a',
+      color: '#fff',
+      icon: 'success',
+      title: 'Divirta-se nesta incrível semana',
+      showConfirmButton: false,
+      timer: 2000
+    });
   }
-
- // else {
-      // Código a ser executado quando estiver em modo autônomo (PWA)
-      // console.log("Está em modo autônomo");
-  // }
+}
