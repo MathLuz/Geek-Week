@@ -7,7 +7,8 @@ let deferredPrompt;
       deferredPrompt = event; // Armazena o evento para uso posterior
     });
 
-    function exibirPrompt() {
+    function baixarApp() {
+      console.log('ativou em')
       if (deferredPrompt) {
         // Exibe o prompt de instalação
         deferredPrompt.prompt();
@@ -44,7 +45,7 @@ if (!window.matchMedia('(display-mode: standalone)').matches) {
     confirmButtonText: 'Quero baixar!'
   }).then((result) => {
     if (result.isConfirmed) {
-      baixar();
+      baixarApp();
     }
   });
     Swal.fire({
