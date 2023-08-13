@@ -279,7 +279,7 @@ html .body-cronograma .main-cronograma .box-eventos .hide {
 
 .body-sobre .main-sobre {
   margin-top: 90px;
-  padding: 10px 30px 60px 30px;
+  padding: 10px 50px 60px 50px;
 }
 .body-sobre .main-sobre section {
   display: flex;
@@ -289,17 +289,18 @@ html .body-cronograma .main-cronograma .box-eventos .hide {
   margin: 10px 0;
 }
 .body-sobre .main-sobre section img {
-  width: 350px;
+  overflow: hidden;
+  width: 100%;
   max-width: 100%;
   border-radius: 10px;
 }
 .body-sobre .main-sobre section h2 {
-  align-items: center;
-  font-size: 29px;
+  text-align: center;
+  font-size: 30px;
   font-weight: 200;
 }
 .body-sobre .main-sobre section p {
-  font-size: 18px;
+  font-size: 19px;
   font-family: Segoe UI;
   font-weight: 400;
   letter-spacing: 1px;
