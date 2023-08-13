@@ -21,6 +21,7 @@ html header {
   color: #0a0a0a;
   display: flex;
   justify-content: center;
+  z-index: 99;
 }
 html header nav {
   display: flex;
@@ -125,6 +126,7 @@ html .body-cronograma .main-cronograma .tags {
   align-items: center;
   width: 100%;
   text-align: center;
+  z-index: 2;
 }
 html .body-cronograma .main-cronograma .tags .tag-btn {
   font-size: 18px;
@@ -162,6 +164,7 @@ html .body-cronograma .main-cronograma .infos {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  z-index: 2;
 }
 html .body-cronograma .main-cronograma .infos li {
   padding: 3px 10px;
@@ -217,8 +220,8 @@ html .body-cronograma .main-cronograma .box-eventos .itens .box-child-events div
 }
 html .body-cronograma .main-cronograma .box-eventos .itens .box-child-events div .titulo-evento {
   text-align: center;
-  font-size: 20px;
-  width: 50%;
+  font-size: 21px;
+  width: 70%;
 }
 html .body-cronograma .main-cronograma .box-eventos .itens .box-child-events div .boximg {
   border-radius: 8px;
@@ -229,11 +232,24 @@ html .body-cronograma .main-cronograma .box-eventos .itens .box-child-events div
   align-items: center;
   justify-content: center;
 }
+html .body-cronograma .main-cronograma .box-eventos .itens .box-child-events div .boximg img {
+  z-index: 1;
+  border-radius: 10px;
+}
 html .body-cronograma .main-cronograma .box-eventos .itens .box-child-events div .boximg .img-width {
   width: 100%;
 }
 html .body-cronograma .main-cronograma .box-eventos .itens .box-child-events div .boximg .img-height {
   height: 100%;
+}
+html .body-cronograma .main-cronograma .box-eventos .itens .box-child-events div .boximg .img-zoom {
+  transform: scale(1.4);
+}
+html .body-cronograma .main-cronograma .box-eventos .itens .box-child-events div .boximg .img-top {
+  margin-top: 50px;
+}
+html .body-cronograma .main-cronograma .box-eventos .itens .box-child-events div .boximg .img-bottom {
+  margin-bottom: 80px;
 }
 html .body-cronograma .main-cronograma .box-eventos .itens .box-child-events div p {
   font-family: Segoe UI;
@@ -393,6 +409,7 @@ footer {
   background-color: #f4a917;
   height: 50px;
   width: 100%;
+  z-index: 99;
 }
 footer img {
   width: 40px;
