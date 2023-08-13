@@ -217,10 +217,23 @@ html .body-cronograma .main-cronograma .box-eventos .itens .box-child-events div
 }
 html .body-cronograma .main-cronograma .box-eventos .itens .box-child-events div .titulo-evento {
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
+  width: 50%;
 }
-html .body-cronograma .main-cronograma .box-eventos .itens .box-child-events div img {
+html .body-cronograma .main-cronograma .box-eventos .itens .box-child-events div .boximg {
   border-radius: 8px;
+  width: 150px;
+  height: 100px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html .body-cronograma .main-cronograma .box-eventos .itens .box-child-events div .boximg .img-width {
+  width: 100%;
+}
+html .body-cronograma .main-cronograma .box-eventos .itens .box-child-events div .boximg .img-height {
+  height: 100%;
 }
 html .body-cronograma .main-cronograma .box-eventos .itens .box-child-events div p {
   font-family: Segoe UI;
