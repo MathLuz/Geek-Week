@@ -80,9 +80,9 @@ html .main-index .backgroundImg {
   opacity: 0.4;
   position: absolute;
   z-index: 0;
-  width: 420px;
-  height: 490px;
-  top: 0;
+  width: 100%;
+  max-width: 420px;
+  top: 100px;
 }
 html .main-index .imgmed {
   height: 110px;
