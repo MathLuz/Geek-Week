@@ -5,7 +5,7 @@
   "display": "standalone",
   "name": "Geek Week - Senac Lapa Tito",
   "short_name": "Geek Week",
-  "orientation": "any",
+  "orientation": "portrait",
   "scope": "/",
   "start_url": "https://mathluz.github.io/Geek-Week/",
   "theme_color": "#f4a917",
