@@ -70,7 +70,7 @@ html .main-index {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 html .main-index img {
   z-index: 2;
@@ -81,14 +81,14 @@ html .main-index .backgroundImg {
   position: absolute;
   z-index: 0;
   width: 100%;
-  max-width: 420px;
+  max-width: 500px;
   top: 10%;
 }
 html .main-index .imgmed {
-  height: 110px;
+  height: 140px;
 }
 html .main-index .imgmax {
-  width: 170px;
+  width: 200px;
 }
 html .main-index .icons-index {
   text-align: center;
