@@ -1,4 +1,4 @@
-# Geek Week
+# Geek Week - 8ª Edição
 
 ### Feito pela sala do Senac Lapa Tito - Técnico de Informática para Internet
 
@@ -22,4 +22,4 @@
   - Github:
     - Plataforma de hospedagem e controle de versão de código-fonte, facilitando a colaboração e a implantação do projeto.
 
-#### [`Página Geek Week`](https://mathluz.github.io/Geek-Week/)
+### [`Página Geek Week`](https://mathluz.github.io/Geek-Week/)
