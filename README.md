@@ -2,7 +2,7 @@
 
 ### Feito pela sala do Senac Lapa Tito - Técnico de Informática para Internet
 
-### `Versão Web de um aplicativo`
+### `Versão Web de um aplicativo mobile`
 
 #### Tecnologias usadas:
   - Linguagens:
