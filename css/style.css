@@ -393,11 +393,12 @@ html .body-cronograma .main-cronograma .box-eventos .hide {
 }
 .body-atividades .main-atividades article .infos-atividade div {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
 }
 .body-atividades .main-atividades article p {
   font-family: Segoe UI;
+  text-align: left;
 }
 
 footer {
