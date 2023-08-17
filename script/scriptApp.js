@@ -37,7 +37,7 @@ if (!window.matchMedia('(display-mode: standalone)').matches) {
       Swal.fire({
         background: '#0a0a0a',
         color: '#fff',
-        title: 'Baixe o App!!',
+        title: 'Adicione à tela de início!',
         text: 'Para ficar por dentro de tudo que precisa saber sobre a semana Geek.',
         imageUrl: 'img/downloadSafari.jpg',
         imageWidth: 400,
@@ -47,7 +47,7 @@ if (!window.matchMedia('(display-mode: standalone)').matches) {
     } else {
       // Sweet Alert
       Swal.fire({
-        title: 'Baixe o App!!',
+        title: 'Instale o App!!',
         text: "Para ficar por dentro de tudo que precisa saber sobre a semana Geek.",
         icon: 'info',
         background: '#0a0a0a',
