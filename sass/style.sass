@@ -2,6 +2,10 @@
 // @import 'fonts'
 // @use 'mixins'
 // Estilos globais
+@mixin marginPage
+  margin-top: 100px
+  padding: 10px 50px 60px 50px
+  
 html
   display: flex
   flex-direction: column
@@ -236,9 +240,9 @@ html
 // PÁGINA SOBRE MUNDO GEEK
 .body-sobre
   .main-sobre
-    margin-top: 90px
-    padding: 10px 50px 60px 50px
+    @include marginPage
     section
+      
       display: flex
       flex-direction: column
       align-items: center
@@ -249,15 +253,18 @@ html
         width: 100%
         max-width: 100%
         border-radius: 10px
+        max-width: 700px
       h2
         text-align: center
         font-size: 30px
         font-weight: 200
+        max-width: 700px
       p
         font-size: 19px
         font-family: variables.$fontDo
         font-weight: 400
         letter-spacing: 1px
+        max-width: 700px
         strong
           font-size: 24px
           font-family: variables.$fontUm
@@ -274,8 +281,10 @@ html
     display: flex
     flex-direction: column
     align-items: center
-    margin-top: 100px
-    padding: 10px 30px 60px 30px
+    @include marginPage
+    .init-creditos
+      width: 100%
+      max-width: 500px
     .devs
       width: 100%
       max-width: 500px
@@ -314,8 +323,7 @@ html
     display: flex
     flex-direction: column
     align-items: center
-    margin-top: 100px
-    padding: 10px 50px 60px 50px
+    @include marginPage
     article
       font-size: 16px
       width: 100%
