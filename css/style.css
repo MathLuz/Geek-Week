@@ -360,21 +360,24 @@ html .body-cronograma .main-cronograma .box-eventos .hide {
   background-color: #222;
   border-radius: 5px;
   padding: 3px;
+  font-size: 16px;
 }
 .body-devs .main-devs .devs div a img {
   height: 20px;
 }
+.body-devs .main-devs .devs div a:hover {
+  background-color: #444;
+}
 .body-devs .main-devs .devs div .funcao {
   font-family: "Sui Generis", sans-serif;
-  font-size: 15px;
+  font-size: 14px;
 }
 .body-devs .main-devs .devs:last-child {
   border: none;
 }
 .body-devs .main-devs .photo-dev {
   border-radius: 10px;
-  height: 100px;
-  width: 100px;
+  height: 120px;
 }
 
 .body-atividades .main-atividades {
