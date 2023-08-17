@@ -283,39 +283,49 @@ html
     align-items: center
     @include marginPage
     .init-creditos
+      background-color: #222
+      padding: 10px
+      border-radius: 10px
+      font-family: variables.$fontDo
       width: 100%
-      max-width: 500px
+      max-width: 600px
+      font-size: 22px
     .devs
       width: 100%
-      max-width: 500px
+      max-width: 600px
       display: flex
       flex-direction: row
       justify-content: space-between
-      gap: 20px
       padding: 25px 0
       border-bottom: 1px solid variables.$corT 
+      div
+        padding: 5px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        gap: 7px 0
+        // h2
+          // text-align: center
+        a
+          color: variables.$corC
+          font-family: variables.$fontDo
+          display: flex
+          align-items: center
+          background-color: #222
+          border-radius: 5px
+          padding: 3px
+          img
+            height: 20px
+        .funcao
+          // text-align: center
+          font-family: variables.$fontUm
+          font-size: 15px
     .devs:last-child
       border: none
     .photo-dev
       border-radius: 10px
       height: 100px
       width: 100px
-    div
-      padding: 5px
-      display: flex
-      flex-direction: column
-      justify-content: space-between
-      h2
-        // text-align: center
-      a
-        color: variables.$corC
-        font-family: variables.$fontDo
-        img
-          height: 20px
-      .funcao
-        // text-align: center
-        font-family: variables.$fontUm
-        font-size: 15px
         
 // ATIVIDADES
 .body-atividades

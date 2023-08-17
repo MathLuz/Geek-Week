@@ -328,18 +328,45 @@ html .body-cronograma .main-cronograma .box-eventos .hide {
   padding: 10px 50px 60px 50px;
 }
 .body-devs .main-devs .init-creditos {
+  background-color: #222;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: "Segoe UI", sans-serif;
   width: 100%;
-  max-width: 500px;
+  max-width: 600px;
+  font-size: 22px;
 }
 .body-devs .main-devs .devs {
   width: 100%;
-  max-width: 500px;
+  max-width: 600px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 20px;
   padding: 25px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.6666666667);
+}
+.body-devs .main-devs .devs div {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 7px 0;
+}
+.body-devs .main-devs .devs div a {
+  color: #fff;
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  align-items: center;
+  background-color: #222;
+  border-radius: 5px;
+  padding: 3px;
+}
+.body-devs .main-devs .devs div a img {
+  height: 20px;
+}
+.body-devs .main-devs .devs div .funcao {
+  font-family: "Sui Generis", sans-serif;
+  font-size: 15px;
 }
 .body-devs .main-devs .devs:last-child {
   border: none;
@@ -348,23 +375,6 @@ html .body-cronograma .main-cronograma .box-eventos .hide {
   border-radius: 10px;
   height: 100px;
   width: 100px;
-}
-.body-devs .main-devs div {
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.body-devs .main-devs div a {
-  color: #fff;
-  font-family: "Segoe UI", sans-serif;
-}
-.body-devs .main-devs div a img {
-  height: 20px;
-}
-.body-devs .main-devs div .funcao {
-  font-family: "Sui Generis", sans-serif;
-  font-size: 15px;
 }
 
 .body-atividades .main-atividades {
