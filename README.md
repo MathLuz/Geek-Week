@@ -1,6 +1,7 @@
 # Geek Week - 8ª Edição
 
-### Feito pela sala do Senac Lapa Tito - Técnico de Informática para Internet
+### Feito pela turma 02 do Senac Lapa Tito - Técnico de Informática para Internet
+(03/2022 - 09/2023)
 
 ### `Versão Web de um aplicativo mobile`
 
