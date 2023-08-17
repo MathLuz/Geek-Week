@@ -11,7 +11,8 @@
     - JavaScript.
       
   - PWA (Progressive Web App):
-    - Download opcional do site, oferecendo uma experiência de usuário aprimorada e offline.
+    - Download opcional do site, oferecendo uma experiência de usuário aprimorada;
+    - Server Worker: componente que permite o usuário utilizar o PWA de modo offline.
       
   - VS Code:
     - Ambiente de Desenvolvimento Integrado (IDE) leve e altamente personalizável.
