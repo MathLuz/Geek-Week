@@ -1,25 +1,29 @@
 const CACHE_NAME = 'my-pwa-cache-v1';
-  // Pastas e arquivos salvos no cache em work server
 const urlsToCache = [
-  // Arquivos na raiz
   '/index.html',
   '/cronograma.html',
   '/desenvolvedores.html',
-  '/mundo-geek.html',
+  '/mundo-geek.html'
+];
 
-  // Tudo das pastas
+// Pode adicionar mais pastas e arquivos aqui
+const foldersToCache = [
   '/css/',
   '/script/',
   '/atividades/',
   '/img/',
-  '/fonts/',
+  '/fonts/'
 ];
 
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE_NAME)
       .then(cache => {
-        return cache.addAll(urlsToCache);
+        cache.addAll(urlsToCache);
+        // Percorre as pastas e adiciona os arquivos ao cache
+        foldersToCache.forEach(folder => {
+          cacheFilesInFolder(cache, folder);
+        });
       })
   );
 });
@@ -33,9 +37,23 @@ self.addEventListener('fetch', event => {
   );
 });
 
+function cacheFilesInFolder(cache, folder) {
+  fetch(folder) // Faz uma requisição para a pasta
+    .then(response => response.text())
+    .then(text => {
+      const files = text.match(/href="([^"]+)"/g); // Obtém os links dos arquivos
+      if (files) {
+        files.forEach(file => {
+          const filePath = file.substring(6, file.length - 1);
+          cache.add(filePath); // Adiciona cada arquivo ao cache
+        });
+      }
+    });
+}
+
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('scrip/service-worker.js')
+    navigator.serviceWorker.register('/scrip/service-worker.js')
       .then(registration => {
         console.log('Service Worker registrado com sucesso:', registration);
       })
