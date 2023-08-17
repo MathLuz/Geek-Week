@@ -1,10 +1,18 @@
 const CACHE_NAME = 'my-pwa-cache-v1';
+  // Pastas e arquivos salvos no cache em work server
 const urlsToCache = [
-  '/',
+  // Arquivos na raiz
   '/index.html',
-  '/styles.css',
-  '/script.js',
-  // Adicione outros recursos que você deseja armazenar em cache
+  '/cronograma.html',
+  '/desenvolvedores.html',
+  '/mundo-geek.html',
+
+  // Tudo das pastas
+  '/css/',
+  '/script/',
+  '/atividades/',
+  '/img/',
+  '/fonts/',
 ];
 
 self.addEventListener('install', event => {
@@ -27,7 +35,7 @@ self.addEventListener('fetch', event => {
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/service-worker.js')
+    navigator.serviceWorker.register('scrip/service-worker.js')
       .then(registration => {
         console.log('Service Worker registrado com sucesso:', registration);
       })
