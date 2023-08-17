@@ -7,15 +7,16 @@ function filterEvents(selectedTag) {
     eventItems.forEach(item => {
         item.classList.add("hide");
     });
-
     const selectedItems = document.querySelectorAll(`[data-tag="${selectedTag}"]`);
     selectedItems.forEach(item => {
         item.classList.remove("hide");
     });
-
     tagButtons.forEach(btn => {
         btn.classList.remove("selected");
     });
+// Para suber a tela para o top quando muda o dia
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
 }
 
 // Obtém o dia da semana atual (0 = Domingo, 1 = Segunda, ..., 6 = Sábado)
