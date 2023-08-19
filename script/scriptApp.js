@@ -2,7 +2,6 @@
 
 if (!window.matchMedia('(display-mode: standalone)').matches) {
   // Código a ser executado quando NÃO estiver em modo autônomo (navegador comum)
-  // console.log("Não está em modo autônomo");
 
   // PARA NÃO APARECER O TEMPO TODO PRO USUÁRIO BAIXAR
 
@@ -14,7 +13,7 @@ if (!window.matchMedia('(display-mode: standalone)').matches) {
   function setVisitedCookie() {
     // Obter a data atual
     var now = new Date();
-    // Definir a data de expiração para 10 minutos após a data atual
+    // Definir a data de expiração
     var expirationDate = new Date(now.getTime() + 60 * 60 * 1000);  // min * seg * mil
     // Formatar a data de expiração para o formato GMT
     var expiresGMT = expirationDate.toUTCString();
