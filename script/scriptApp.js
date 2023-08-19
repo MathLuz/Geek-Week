@@ -14,7 +14,7 @@ if (!window.matchMedia('(display-mode: standalone)').matches) {
     // Obter a data atual
     var now = new Date();
     // Definir a data de expiração
-    var expirationDate = new Date(now.getTime() + 60 * 60 * 1000);  // min * seg * mil
+    var expirationDate = new Date(now.getTime() + 30 * 60 * 1000);  // min * seg * mil
     // Formatar a data de expiração para o formato GMT
     var expiresGMT = expirationDate.toUTCString();
     // Definir o cookie com a data de expiração ajustada
