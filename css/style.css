@@ -16,6 +16,20 @@
     transform: translateY(0);
   }
 }
+.deBaixoC {
+  animation: deBaixoC 0.5s forwards;
+}
+
+@keyframes deBaixoC {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .daEsquerda {
   opacity: 0;
   transform: translateX(-50px);
@@ -28,16 +42,9 @@
   transition: opacity 1s, transform 1s;
 }
 
-.deBaixoS {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 1s, transform 1s;
-}
-
-.daEsquerda.active, .daDireita.active, .deBaixoS.active {
+.daEsquerda.active, .daDireita.active {
   opacity: 1;
   transform: translateX(0);
-  transform: translateY(0);
 }
 
 html {
