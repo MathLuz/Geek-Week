@@ -2,6 +2,62 @@
   font-family: "Sui Generis";
   src: url("../fonts/x-man.ttf") format("truetype");
 }
+.deBaixo {
+  animation: deBaixo 1s forwards;
+}
+
+.deCima {
+  animation: deCima 1s forwards;
+}
+
+.daEsquerda {
+  animation: daEsquerda 1s forwards;
+}
+
+.daDireita {
+  animation: daDireita 1s forwards;
+}
+
+@keyframes deBaixo {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes deCima {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes daEsquerda {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes daDireita {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 html {
   display: flex;
   flex-direction: column;
@@ -225,8 +281,8 @@ html .body-cronograma .main-cronograma .box-eventos .itens .box-child-events div
 }
 html .body-cronograma .main-cronograma .box-eventos .itens .box-child-events div .boximg {
   border-radius: 8px;
-  width: 150px;
-  height: 100px;
+  width: 120px;
+  height: 75px;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -253,7 +309,7 @@ html .body-cronograma .main-cronograma .box-eventos .itens .box-child-events div
 }
 html .body-cronograma .main-cronograma .box-eventos .itens .box-child-events div p {
   font-family: "Segoe UI", sans-serif;
-  margin: 10px;
+  margin: 10px 0;
 }
 html .body-cronograma .main-cronograma .box-eventos .itens .box-child-events div p strong {
   font-weight: 800;
