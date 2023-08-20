@@ -2,6 +2,14 @@
   font-family: "Sui Generis";
   src: url("../fonts/x-man.ttf") format("truetype");
 }
+.deBaixo {
+  animation: deBaixo 1s forwards;
+}
+
+.deCima {
+  animation: deCima 1s forwards;
+}
+
 @keyframes deBaixo {
   0% {
     opacity: 0;
