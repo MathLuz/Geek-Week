@@ -140,11 +140,26 @@ html .main-index .backgroundImg {
   max-width: 500px;
   top: 10%;
 }
-html .main-index .imgmed {
-  height: 140px;
-}
-html .main-index .imgmax {
+html .main-index .logoGeek {
   width: 200px;
+  animation-duration: 0.5s;
+}
+html .main-index .circleLogo {
+  height: 140px;
+  animation-duration: 0.6s;
+}
+html .main-index .iconUm {
+  animation-duration: 0.7s;
+}
+html .main-index .iconDo {
+  animation-duration: 0.8s;
+}
+html .main-index .iconTr {
+  animation-duration: 0.9s;
+}
+html .main-index .logoSenac {
+  width: 200px;
+  animation-duration: 1s;
 }
 html .main-index .icons-index {
   text-align: center;
