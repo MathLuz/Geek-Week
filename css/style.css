@@ -2,22 +2,6 @@
   font-family: "Sui Generis";
   src: url("../fonts/x-man.ttf") format("truetype");
 }
-.deBaixo {
-  animation: deBaixo 1s forwards;
-}
-
-.deCima {
-  animation: deCima 1s forwards;
-}
-
-.daEsquerda {
-  animation: daEsquerda 1s forwards;
-}
-
-.daDireita {
-  animation: daDireita 1s forwards;
-}
-
 @keyframes deBaixo {
   0% {
     opacity: 0;
@@ -38,26 +22,23 @@
     transform: translateY(0);
   }
 }
-@keyframes daEsquerda {
-  0% {
-    opacity: 0;
-    transform: translateX(-100px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
+.daEsquerda {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 1s, transform 1s;
 }
-@keyframes daDireita {
-  0% {
-    opacity: 0;
-    transform: translateX(100px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
+
+.daDireita {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 1s, transform 1s;
 }
+
+.daEsquerda.active, .daDireita.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 html {
   display: flex;
   flex-direction: column;
