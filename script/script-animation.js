@@ -12,7 +12,7 @@ function isElementVisible(element) {
 // Função para adicionar classe de animação quando o elemento é visível
 function handleScrollAnimations() {
     // Seleciona todos os elementos com classes de animação
-    const elements = document.querySelectorAll('.daEsquerda, .daDireita');
+    const elements = document.querySelectorAll('.daEsquerda, .daDireita, .deBaixoS');
 
     elements.forEach(element => {
         if (isElementVisible(element) && !element.classList.contains('active')) {

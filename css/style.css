@@ -6,24 +6,10 @@
   animation: deBaixo 1s forwards;
 }
 
-.deCima {
-  animation: deCima 1s forwards;
-}
-
 @keyframes deBaixo {
   0% {
     opacity: 0;
     transform: translateY(100px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@keyframes deCima {
-  0% {
-    opacity: 0;
-    transform: translateY(-100px);
   }
   100% {
     opacity: 1;
@@ -42,9 +28,16 @@
   transition: opacity 1s, transform 1s;
 }
 
-.daEsquerda.active, .daDireita.active {
+.deBaixoS {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s, transform 1s;
+}
+
+.daEsquerda.active, .daDireita.active, .deBaixoS.active {
   opacity: 1;
   transform: translateX(0);
+  transform: translateY(0);
 }
 
 html {
