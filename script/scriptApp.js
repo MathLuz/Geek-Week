@@ -18,7 +18,7 @@ if (!window.matchMedia('(display-mode: standalone)').matches) {
     // Formatar a data de expiração para o formato GMT
     var expiresGMT = expirationDate.toUTCString();
     // Definir o cookie com a data de expiração ajustada
-    document.cookie = 'visited=true; expires=' + expiresGMT + '; path=/';
+    document.cookie = 'visited=true; expires=' + expiresGMT + '; path=/; SameSite=None; Secure';
   }
   // Exibir a função apenas na primeira (dentro da quantidade de tempo) vez que o usuário acessar
   if (!hasUserVisitedPage()) {
