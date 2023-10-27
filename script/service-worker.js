@@ -13,7 +13,6 @@ const urlsToCache = [
   '/script/script-cronograma.js',
   '/script/scriptGoBack.js',
   '/script/script-animation.js',
-  //'/img/image1.jpg',
   '/fonts/x-man.ttf',
 ];
 
@@ -32,12 +31,3 @@ self.addEventListener('fetch', event => {
     })
   );
 });
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/service-worker.js', { scope: '/' })
-    .then(registration => {
-      console.log('Service Worker registrado com sucesso:', registration);
-    })
-    .catch(error => {
-      console.error('Erro ao registrar o Service Worker:', error);
-    });
-}
