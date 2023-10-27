@@ -7,7 +7,8 @@ const CACHE = "Paginas-em-Cache";
 const urlsToCache = [
   '/index.html',
   '/cronograma.html',
-  '/mundo-geek.html'
+  '/mundo-geek.html',
+  '/desenvolvedores.html'
 ];
 
 // Array de pastas a seresm salvas
