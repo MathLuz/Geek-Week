@@ -7,6 +7,7 @@ const urlsToCache = [
   '/index.html',
   '/cronograma.html',
   '/mundo-geek.html',
+  '/desenvolvedores.html',
   '/css/style.css',
   '/css/reset.css',
   '/script/script-cronograma.js',
