@@ -1,7 +1,7 @@
 // Este é o service worker para a página "Offline"
 
 // Importa a biblioteca Workbox para funcionalidades de service worker
-importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js');
+// importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js');
 
 // Define o nome do cache
 const CACHE = "Paginas-em-Cache";
