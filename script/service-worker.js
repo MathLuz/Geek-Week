@@ -22,6 +22,17 @@ const foldersToCache = [
   '/fonts/'
 ];
 
+self.addEventListener('install', async (event) => {
+  event.waitUntil(
+    // Abre um novo cache com o nome especificado
+    caches.open(CACHE)
+      .then((cache) => {
+        // Adiciona os recursos definidos em 'urlsToCache' ao cache
+        return cache.addAll(urlsToCache);
+      })
+  );
+});
+
 // Define o nome do arquivo HTML de fallback offline
 const offlineFallbackPage = "ToDo-replace-this-name.html";
 
