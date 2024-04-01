@@ -1,9 +1,7 @@
-// VENDO SE FOI ABERTO EM NO SITE
-
+// VERIFICA SE FOI ABERTO NA WEB
 if (!window.matchMedia('(display-mode: standalone)').matches) {
-  // Código a ser executado quando NÃO estiver em modo autônomo (navegador comum)
-
-  // PARA NÃO APARECER O TEMPO TODO PRO USUÁRIO BAIXAR
+  
+  // PARA NÃO APARECER O TEMPO TODO PARA O USUÁRIO BAIXAR
 
   // Verificar se o usuário já acessou a página
   function hasUserVisitedPage() {
@@ -20,7 +18,7 @@ if (!window.matchMedia('(display-mode: standalone)').matches) {
     // Definir o cookie com a data de expiração ajustada
     document.cookie = 'visited=true; expires=' + expiresGMT + '; path=/; SameSite=None; Secure';
   }
-  // Exibir a função apenas na primeira (dentro da quantidade de tempo) vez que o usuário acessar
+  // Exibir a função apenas na primeira vez que o usuário acessar (dentro da quantidade de tempo)
   if (!hasUserVisitedPage()) {
 
     // CASO SEJA ABERTO NO SAFARI
